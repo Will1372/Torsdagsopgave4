@@ -1,0 +1,188 @@
+// 4.a
+import java.util.ArrayList;
+
+public class GameMenu{
+    private ArrayList<String> options;
+
+    public GameMenu(){
+        this.options = new ArrayList<>();
+    }
+
+    public void addOption(String option){
+        options.add(option);
+    }
+
+    public void displayMenu(){
+        System.out.println("Menu:");
+        for (int i = 0; i < options.size(); i++){
+            System.out.println((i + 1) + ". " + options.get(i));
+        }
+    }
+}
+
+// 4.b
+import java.util.ArrayList;
+
+public class GameMenu{
+    private ArrayList<String> options;
+    private ArrayList<String> actions;
+
+    public GameMenu(){
+        this.options = new ArrayList<>();
+        this.actions = new ArrayList<>();
+    }
+
+    public void addOption(String option){
+        options.add(option);
+    }
+
+    public void addAction(String action){
+        actions.add(action);
+    }
+
+    public void displayMenu(){
+        System.out.println("Menu:");
+        for (int i = 0; i < options.size(); i++){
+            System.out.println((i + 1) + ". " + options.get(i));
+        }
+    }
+}
+
+// 4.c
+import java.util.ArrayList;
+
+public class GameMenu{
+    private ArrayList<String> options;
+    private ArrayList<String> actions;
+
+    public GameMenu(ArrayList<String> actions){
+        this.options = new ArrayList<>();
+        this.actions = actions;
+    }
+
+    public void addOption(String option){
+        options.add(option);
+    }
+
+    public void addAction(String action){
+        actions.add(action);
+    }
+
+    public void displayMenu(){
+        System.out.println("Menu:");
+        for (int i = 0; i < options.size(); i++){
+            System.out.println((i + 1) + ". " + options.get(i));
+        }
+    }
+}
+
+// 4.d
+import java.util.ArrayList;
+
+public class GameMenu{
+    private ArrayList<String> options;
+    private ArrayList<String> actions;
+
+    public GameMenu(ArrayList<String> actions){
+        this.options = new ArrayList<>();
+        this.actions = actions;
+    }
+
+    public void addOption(String option){
+        options.add(option);
+    }
+
+    public void addAction(String action){
+        actions.add(action);
+    }
+
+    public void displayMenu(){
+        System.out.println("Menu:");
+        for (int i = 0; i < options.size(); i++){
+            System.out.println((i + 1) + ". " + options.get(i));
+        }
+    }
+}
+
+// 4.e
+public class Main{
+    public static void main(String[] args){
+   
+    }
+}
+
+// 4.f
+import java.util.ArrayList;
+
+public class Main{
+    public static void main(String[] args){
+        // Create an ArrayList of type String called actions
+        ArrayList<String> actions = new ArrayList<>();
+
+        actions.add("1) Start game");
+        actions.add("2) Resume game");
+        actions.add("3) Pause game");
+        actions.add("4) End game");
+
+        System.out.println(actions.get(2));
+    }
+}
+
+// 4.g
+import java.util.ArrayList;
+
+public class Main{
+    public static void main(String[] args){
+        ArrayList<String> actions = new ArrayList<>();
+        actions.add("1) Start game");
+        actions.add("2) Resume game");
+        actions.add("3) Pause game");
+        actions.add("4) End game");
+
+        GameMenu gameMenu = new GameMenu(actions);
+    }
+}
+
+// 4.h
+import java.util.ArrayList;
+
+public class GameMenu {
+    private ArrayList<String> options;
+    private ArrayList<String> actions;
+
+    public GameMenu(ArrayList<String> actions){
+        this.options = new ArrayList<>();
+        this.actions = actions;
+    }
+
+    public void addOption(String option){
+        options.add(option);
+    }
+
+    public void addAction(String action){
+        actions.add(action);
+    }
+
+    public void displayMenu(){
+        System.out.println("Menu:");
+        for (String action : actions){
+            System.out.println(action);
+        }
+    }
+}
+
+// 4.i
+import java.util.ArrayList;
+
+public class Main{
+    public static void main(String[] args){
+        ArrayList<String> actions = new ArrayList<>();
+        actions.add("1) Start game");
+        actions.add("2) Resume game");
+        actions.add("3) Pause game");
+        actions.add("4) End game");
+
+        GameMenu gameMenu = new GameMenu(actions);
+        gameMenu.displayMenu();
+    }
+}

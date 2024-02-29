@@ -1,0 +1,217 @@
+// 5.a
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class GameMenu{
+    private ArrayList<String> options;
+    private ArrayList<String> actions;
+
+    public GameMenu(ArrayList<String> actions){
+        this.options = new ArrayList<>();
+        this.actions = actions;
+    }
+
+    public void addOption(String option){
+        options.add(option);
+    }
+
+    public void addAction(String action){
+        actions.add(action);
+    }
+
+    public void displayMenu(){
+        System.out.println("Menu:");
+        for (String action : actions) {
+            System.out.println(action);
+        }
+    }
+
+    public void getAction(){
+        System.out.println("Type a number to choose an action:");
+        displayMenu();
+    }
+}
+
+// 5.b
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class GameMenu{
+    private ArrayList<String> options;
+    private ArrayList<String> actions;
+
+    public GameMenu(ArrayList<String> actions){
+        this.options = new ArrayList<>();
+        this.actions = actions;
+    }
+
+    public void addOption(String option){
+        options.add(option);
+    }
+
+    public void addAction(String action){
+        actions.add(action);
+    }
+
+    public void displayMenu(){
+        System.out.println("Menu:");
+        for (String action : actions){
+            System.out.println(action);
+        }
+    }
+
+    public void getAction(){
+        System.out.println("Type a number to choose an action:");
+        displayMenu();
+
+        Scanner scanner = new Scanner(System.in);
+        String choice = scanner.nextLine();
+    }
+}
+
+// 5.c
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class GameMenu{
+    private ArrayList<String> options;
+    private ArrayList<String> actions;
+
+    public GameMenu(ArrayList<String> actions){
+        this.options = new ArrayList<>();
+        this.actions = actions;
+    }
+
+    public void addOption(String option){
+        options.add(option);
+    }
+
+    public void addAction(String action){
+        actions.add(action);
+    }
+
+    public void displayMenu(){
+        System.out.println("Menu:");
+        for (String action : actions) {
+            System.out.println(action);
+        }
+    }
+
+    public String getAction(){
+        System.out.println("Type a number to choose an action:");
+        displayMenu();
+
+        Scanner scanner = new Scanner(System.in);
+        String choice = scanner.nextLine();
+
+        return choice;
+    }
+}
+
+// 5.d
+import java.util.ArrayList;
+
+public class Main{
+    public static void main(String[] args){
+        ArrayList<String> actions = new ArrayList<>();
+        actions.add("1) Start game");
+        actions.add("2) Resume game");
+        actions.add("3) Pause game");
+        actions.add("4) End game");
+
+        GameMenu gameMenu = new GameMenu(actions);
+
+        String userChoice = gameMenu.getAction();
+    }
+}
+
+// 5.e / 5.d igen :D
+public class Main{
+    public static void main(String[] args){
+        ArrayList<String> actions = new ArrayList<>();
+        actions.add("1) Start game");
+        actions.add("2) Resume game");
+        actions.add("3) Pause game");
+        actions.add("4) End game");
+
+        GameMenu gameMenu = new GameMenu(actions);
+        String userChoice = gameMenu.getAction();
+
+        doAction(Integer.parseInt(userChoice));
+    }
+
+    public static void doAction(int action){
+        switch (action){
+            case 1:
+                System.out.println("Starting the game...");
+                break;
+            case 2:
+                System.out.println("Resuming the game...");
+                break;
+            case 3:
+                System.out.println("Pausing the game...");
+                break;
+            case 4:
+                System.out.println("Ending the game...");
+                break;
+            default:
+                System.out.println("Invalid action!");
+        }
+    }
+}
+
+// 5.f
+public static void doAction(int action){
+    switch (action){
+        case 1:
+            System.out.println("Starting the game now");
+            break;
+        case 2:
+            System.out.println("Fetching previously saved game data");
+            break;
+        case 3:
+            System.out.println("Game paused");
+            break;
+        case 4:
+            System.out.println("Ending game");
+            break;
+        default:
+            System.out.println("Invalid action!");
+    }
+}
+
+// 5.g
+public class Main{
+    public static void main(String[] args){
+        ArrayList<String> actions = new ArrayList<>();
+        actions.add("1) Start game");
+        actions.add("2) Resume game");
+        actions.add("3) Pause game");
+        actions.add("4) End game");
+
+        GameMenu gameMenu = new GameMenu(actions);
+        String userChoice = gameMenu.getAction();
+
+        int choice = Integer.parseInt(userChoice);
+        doAction(choice);
+    }
+
+    public static void doAction(int action){
+        switch (action){
+            case 1:
+                System.out.println("Starting the game now");
+                break;
+            case 2:
+                System.out.println("Fetching previously saved game data");
+                break;
+            case 3:
+                System.out.println("Game paused");
+                break;
+            case 4:
+                System.out.println("Ending game");
+                break;
+            default:
+                System.out.println("Invalid action!");
+        }
+    }
+}

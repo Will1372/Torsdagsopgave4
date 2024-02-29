@@ -1,0 +1,134 @@
+// 2.a
+public class Main{
+    public static void main(String[] args){
+
+    }
+}
+
+// 2.b
+public class Main{
+    public static void main(String[] args){
+
+        System.out.println("Please type your name:");
+
+    }
+}
+
+// 2.c
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please type your name:");
+
+        scanner.close();
+    }
+}
+
+// 2.d 
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please type your name:");
+
+        String name = scanner.nextLine();
+
+        scanner.close();
+    }
+}
+
+// 2.e
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please type your name:");
+
+        String name = scanner.nextLine();
+
+        System.out.println("Hello, " + name + "!");
+
+        System.out.println("Please type your age:");
+
+        scanner.close();
+    }
+}
+
+// 2.f
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please type your name:");
+
+        String name = scanner.nextLine();
+
+        System.out.println("Hello, " + name + "!");
+
+        System.out.println("Please type your age:");
+
+        int age = scanner.nextInt();
+
+        scanner.close();
+    }
+}
+
+// 2.g
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please type your name:");
+
+        String name = scanner.nextLine();
+
+        System.out.println("Hello, " + name + "!");
+
+        System.out.println("Please type your age:");
+
+        int age = scanner.nextInt();
+
+        System.out.println("You entered: " + age);
+
+        scanner.close();
+    }
+}
+
+// 2.h
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please type your name:");
+
+        String name = scanner.nextLine();
+
+        System.out.println("Hello, " + name + "!");
+
+        System.out.println("Please type your age:");
+
+        int age = scanner.nextInt();
+
+        System.out.println("You entered: " + age);
+
+        int retirementAge = 67;
+        int yearsUntilRetirement = retirementAge - age;
+
+        System.out.println("You have " + yearsUntilRetirement + " years until retirement.");
+
+        scanner.close();
+    }
+}

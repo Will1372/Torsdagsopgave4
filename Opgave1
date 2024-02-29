@@ -1,0 +1,411 @@
+// 1.a
+
+public class Main{
+
+public static void main (String[] args){
+	
+	}
+}
+// 1.b
+
+public class Team{
+    private String name;
+    private int teamTal;
+
+    public Team(String name, int teamTal) {
+        this.name = name;
+        this.teamTal = teamTal;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int teamTal() {
+        return teamTal;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setFoundingYear(int teamTal) {
+        this.teamTal = teamTal;
+    }
+
+    @Override
+    public String toString(){
+        return "Team{" +
+                "name='" + name + '\'' +
+                ", teamTal=" + teamTal +
+                '}';
+    }
+}
+
+// 1.c
+public class Team {
+    private String teamNavn;
+    private int teamTal;
+
+    public Team(String teamNavn, int teamTal){
+        this.teamNavn = teamNavn;
+        this.teamTal = teamTal;
+    }
+
+    public String getTeamNavn(){
+        return teamNavn;
+    }
+
+    public int getTeamTal(){
+        return teamTal;
+    }
+
+    public void setTeamNavn(String teamNavn){
+        this.teamNavn = teamNavn;
+    }
+
+    public void setTeamTal(int teamTal){
+        this.teamTal = teamTal;
+    }
+
+    @Override
+    public String toString(){
+        return "Team{" +
+                "teamNavn='" + teamNavn + '\'' +
+                ", teamTal=" + teamTal +
+                '}';
+    }
+}
+
+// 1.d
+public class Team{
+    private String teamNavn;
+    private int teamTal;
+    private int teamRank;
+
+    public Team(String teamNavn, int teamTal, int teamRank){
+        this.teamNavn = teamNavn;
+        this.teamTal = teamTal;
+        this.teamRank = teamRank;
+    }
+
+    public String getTeamNavn(){
+        return teamNavn;
+    }
+
+    public int getTeamTal(){
+        return teamTal;
+    }
+
+    public int getTeamRank(){
+        return teamRank;
+    }
+
+    public void setTeamNavn(String teamNavn){
+        this.teamNavn = teamNavn;
+    }
+
+    public void setTeamTal(int teamTal){
+        this.teamTal = teamTal;
+    }
+
+    public void setTeamRank(int teamRank){
+        this.teamRank = teamRank;
+    }
+
+    @Override
+    public String toString(){
+        return "Team{" +
+                "teamNavn='" + teamNavn + '\'' +
+                ", teamTal=" + teamTal +
+                ", teamRank=" + teamRank +
+                '}';
+    }
+}
+
+// 1.e
+import java.util.Arrays;
+
+public class Team{
+    private String teamNavn;
+    private int teamTal;
+    private int teamRank;
+    private String[] teamNavne;
+
+    public Team(String teamNavn, int teamTal, int teamRank, String[] teamNavne){
+        this.teamNavn = teamNavn;
+        this.teamTal = teamTal;
+        this.teamRank = teamRank;
+        this.teamNavne = teamNavne;
+    }
+
+    public String getTeamNavn(){
+        return teamNavn;
+    }
+
+    public int getTeamTal(){
+        return teamTal;
+    }
+
+    public int getTeamRank(){
+        return teamRank;
+    }
+
+    public String[] getTeamNavne(){
+        return teamNavne;
+    }
+
+    public void setTeamNavn(String teamNavn){
+        this.teamNavn = teamNavn;
+    }
+
+    public void setTeamTal(int teamTal){
+        this.teamTal = teamTal;
+    }
+
+    public void setTeamRank(int teamRank){
+        this.teamRank = teamRank;
+    }
+
+    public void setTeamNavne(String[] teamNavne){
+        this.teamNavne = teamNavne;
+    }
+
+    @Override
+    public String toString(){
+        return "Team{" +
+                "teamNavn='" + teamNavn + '\'' +
+                ", teamTal=" + teamTal +
+                ", teamRank=" + teamRank +
+                ", teamNavne=" + Arrays.toString(teamNavne) +
+                '}';
+    }
+}
+
+// 1.f
+import java.util.Arrays;
+
+public class Team{
+    private String teamNavn;
+    private int teamTal;
+    private int teamRank;
+    private String[] teamNavne;
+
+    public Team(String teamNavn, int teamTal, int teamRank, String[] teamNavne){
+        this.teamNavn = teamNavn;
+        this.teamTal = teamTal;
+        this.teamRank = teamRank;
+        this.teamNavne = teamNavne;
+    }
+
+    public Team(String teamNavn){
+        this.teamNavn = teamNavn;
+        this.teamTal = 0;
+        this.teamRank = 0;
+        this.teamNavne = new String[0];
+    }
+
+    public String getTeamNavn(){
+        return teamNavn;
+    }
+
+    public int getTeamTal(){
+        return teamTal;
+    }
+
+    public int getTeamRank(){
+        return teamRank;
+    }
+
+    public String[] getTeamNavne(){
+        return teamNavne;
+    }
+
+    public void setTeamNavn(String teamNavn){
+        this.teamNavn = teamNavn;
+    }
+
+    public void setTeamTal(int teamTal){
+        this.teamTal = teamTal;
+    }
+
+    public void setTeamRank(int teamRank){
+        this.teamRank = teamRank;
+    }
+
+    public void setTeamNavne(String[] teamNavne){
+        this.teamNavne = teamNavne;
+    }
+
+    @Override
+    public String toString(){
+        return "Team{" +
+                "teamNavn='" + teamNavn + '\'' +
+                ", teamTal=" + teamTal +
+                ", teamRank=" + teamRank +
+                ", teamNavne=" + Arrays.toString(teamNavne) +
+                '}';
+    }
+}
+
+// 1.g
+public class Main{
+    public static void main(String[] args){
+        Team team = new Team("TeamNavn");
+
+    }
+}
+
+// 1.h
+import java.util.Arrays;
+
+public class Team{
+    private String teamNavn;
+    private int teamTal;
+    private int teamRank;
+    private String[] teamNavne;
+
+    public Team(String teamNavn, int teamTal, int teamRank, String[] teamNavne){
+        this.teamNavn = teamNavn;
+        this.teamTal = teamTal;
+        this.teamRank = teamRank;
+        this.teamNavne = teamNavne;
+    }
+
+    public Team(String teamNavn){
+        this.teamNavn = teamNavn;
+        this.teamTal = 0;
+        this.teamRank = 0;
+        this.teamNavne = new String[0];
+    }
+
+    public String getTeamNavn(){
+        return teamNavn;
+    }
+
+    public int getTeamTal(){
+        return teamTal;
+    }
+
+    public int getTeamRank(){
+        return teamRank;
+    }
+
+    public String[] getTeamNavne(){
+        return teamNavne;
+    }
+
+    public void setTeamNavn(String teamNavn){
+        this.teamNavn = teamNavn;
+    }
+
+    public void setTeamTal(int teamTal){
+        this.teamTal = teamTal;
+    }
+
+    public void setTeamRank(int teamRank){
+        this.teamRank = teamRank;
+    }
+
+    public void setTeamNavne(String[] teamNavne){
+        this.teamNavne = teamNavne;
+    }
+    
+    public void setRank(int rank){
+        this.teamRank = rank;
+    }
+
+    @Override
+    public String toString(){
+        return "Team{" +
+                "teamNavn='" + teamNavn + '\'' +
+                ", teamTal=" + teamTal +
+                ", teamRank=" + teamRank +
+                ", teamNavne=" + Arrays.toString(teamNavne) +
+                '}';
+    }
+}
+
+// 1.j
+import java.util.Arrays;
+
+public class Team{
+    private String teamNavn;
+    private int teamTal;
+    private int teamRank;
+    private String[] teamNavne;
+
+    public Team(String teamNavn, int teamTal, int teamRank, String[] teamNavne){
+        this.teamNavn = teamNavn;
+        this.teamTal = teamTal;
+        this.teamRank = teamRank;
+        this.teamNavne = teamNavne;
+    }
+
+    public Team(String teamNavn){
+        this.teamNavn = teamNavn;
+        this.teamTal = 0;
+        this.teamRank = 0;
+        this.teamNavne = new String[0];
+    }
+
+    public String getTeamNavn(){
+        return teamNavn;
+    }
+
+    public int getTeamTal(){
+        return teamTal;
+    }
+
+    public int getTeamRank(){
+        return teamRank;
+    }
+
+    public String[] getTeamNavne(){
+        return teamNavne;
+    }
+
+    public void setTeamNavn(String teamNavn){
+        this.teamNavn = teamNavn;
+    }
+
+    public void setTeamTal(int teamTal){
+        this.teamTal = teamTal;
+    }
+
+    public void setTeamRank(int teamRank) {
+        this.teamRank = teamRank;
+    }
+
+    public void setTeamNavne(String[] teamNavne){
+        this.teamNavne = teamNavne;
+    }
+    
+    public void setRank(int rank){
+        this.teamRank = rank;
+    }
+
+    @Override
+    public String toString(){
+        return "Hold: " + teamNavn + " Rang: " + teamRank;
+    }
+}
+
+// 1.k
+public class Main{
+    public static void main(String[] args){
+        Team team1 = new Team("Team1", 2020, 1, new String[]{"Person1", "Person2", "Person3"});
+        Team team2 = new Team("Team2", 2019, 2, new String[]{"Person4", "Person5", "Person6"});
+        Team team3 = new Team("Team3", 2018, 3, new String[]{"Person7", "Person8", "Person9"});
+        Team team4 = new Team("Team4", 2017, 4, new String[]{"Person10", "Person11", "Person12"});
+        Team team5 = new Team("Team5", 2016, 5, new String[]{"Person13", "Person14", "Person15"});
+        
+        System.out.println(team1);
+        System.out.println(team2);
+        System.out.println(team3);
+        System.out.println(team4);
+        System.out.println(team5);
+    }
+}
+
+
